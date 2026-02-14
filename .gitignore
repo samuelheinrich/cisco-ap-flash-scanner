@@ -9,6 +9,10 @@ shared/
 reload_pimped/state/
 reload_pimped/.reload_worker.lock/
 
+# Other local tooling (not part of this repo)
+reload_single/
+reload_multi/
+reload_pimped/
+
 # Local scan outputs
 wlc_ap_tui/scan_results/
-

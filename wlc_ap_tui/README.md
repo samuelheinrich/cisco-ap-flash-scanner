@@ -39,7 +39,10 @@ Each scan creates a folder under `wlc_ap_tui/scan_results/<scanname>_<timestamp>
 - `wlc_show_ap_summary.txt`
 - `events.log`
 
+## Demo Data
+
+This repo may include anonymized demo scans under `wlc_ap_tui/demo_data/`.
+
 ## Disclaimer
 
 Use at your own risk. No warranty. Authorized use only.
-
