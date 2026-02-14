@@ -1,0 +1,14 @@
+.DS_Store
+**/__pycache__/
+*.pyc
+
+# Local secrets / credentials
+shared/
+
+# Runtime state / logs
+reload_pimped/state/
+reload_pimped/.reload_worker.lock/
+
+# Local scan outputs
+wlc_ap_tui/scan_results/
+
