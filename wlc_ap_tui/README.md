@@ -2,6 +2,18 @@
 
 C64-ish terminal UI to fetch AP inventory from a Cisco WLC and scan AP filesystems via SSH.
 
+## Why This Exists
+
+Cisco Catalyst APs can get into broken states where flash/tmp fills up and they stop behaving properly (stuck downloads, join issues, not joining the WLC, etc.).
+When you have dozens or hundreds of APs, you need a fast way to:
+
+- pull a complete AP inventory from the WLC
+- check filesystem utilization (`/part1`, `/part2`, `/tmp`) across many APs
+- trigger a reload quickly (with a safety confirmation)
+
+Related Cisco guidance (background / recovery workflow):
+https://www.cisco.com/c/en/us/support/docs/wireless/wireless-lan-controller-software/225443-validate-and-recover-catalyst-aps-on.html
+
 ## Requirements
 
 - `python3`
@@ -15,6 +27,28 @@ C64-ish terminal UI to fetch AP inventory from a Cisco WLC and scan AP filesyste
 cd wlc_ap_tui
 ./wlc_ap_tui.py
 ```
+
+## Screenshots
+
+Home / boot:
+
+![Boot screen](Example_pics/Xnip2026-02-14_16-09-37.jpg)
+
+Scan wizard:
+
+![Scan wizard](Example_pics/Xnip2026-02-14_16-10-05.jpg)
+
+Import WLC `show ap summary`:
+
+![Import screen](Example_pics/Xnip2026-02-14_16-11-05.jpg)
+
+Scan view (inventory + filesystem utilization):
+
+![Scan view](Example_pics/Xnip2026-02-14_16-12-24.jpg)
+
+Reload confirmation modal:
+
+![Reload confirm](Example_pics/Xnip2026-02-14_16-13-20.jpg)
 
 ## Keys (Scan Screen)
 
